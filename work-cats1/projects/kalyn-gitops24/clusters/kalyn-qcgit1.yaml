@@ -11,7 +11,7 @@ spec:
   config:
     managedNodeGroups:
     - amiFamily: AmazonLinux2
-      desiredCapacity: 1
+      desiredCapacity: 2
       iam:
         withAddonPolicies:
           autoScaler: true
@@ -19,17 +19,6 @@ spec:
       maxSize: 2
       minSize: 1
       name: ng1
-      volumeSize: 80
-      volumeType: gp3
-    - amiFamily: AmazonLinux2
-      desiredCapacity: 2
-      iam:
-        withAddonPolicies:
-          autoScaler: true
-      instanceType: t3.xlarge
-      maxSize: 3
-      minSize: 1
-      name: ngroup3
       volumeSize: 80
       volumeType: gp3
     - amiFamily: AmazonLinux2
