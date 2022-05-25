@@ -32,6 +32,17 @@ spec:
       name: ngroup3
       volumeSize: 80
       volumeType: gp3
+    - amiFamily: AmazonLinux2
+      desiredCapacity: 1
+      iam:
+        withAddonPolicies:
+          autoScaler: true
+      instanceType: t3.xlarge
+      maxSize: 2
+      minSize: 1
+      name: ngroup4
+      volumeSize: 80
+      volumeType: gp3
     metadata:
       name: kalyn-qcgit1
       region: us-west-2
